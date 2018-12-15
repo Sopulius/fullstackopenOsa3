@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-// korvaa url oman tietokantasi urlilla. ethän laita salasanaa Githubiin!
+
 const url = ''
 
 
