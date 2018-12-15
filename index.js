@@ -18,6 +18,14 @@ const formatPerson = (person) => {
     }
   }
 
+const formatPerson = (person) => {
+    return {
+      name: person.name,
+      number: person.number,
+      id: person._id
+    }
+  }
+
 app.get('/', (req, res) => {
   res.send('<h1>Hello World!</h1>')
 })
