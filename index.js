@@ -2,9 +2,11 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser')
 const morgan = require("morgan")
+const cors = require('cors')
 
 app.use(bodyParser.json())
 app.use(morgan('tiny'));
+app.use(cors())
 
 let persons = [
   {name: "Arto Hellas",
