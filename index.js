@@ -10,21 +10,6 @@ app.use(morgan('tiny'));
 app.use(cors())
 app.use(express.static('build'))
 
-let persons = [
-  {name: "Arto Hellas",
-    number: "040-123456",
-    id: 1},
-    {name: "Martti Tienari",
-    number: "040-123456",
-    id: 2},
-    {name: "Arto Järvinen",
-    number: "040-123456",
-    id: 3},
-    {name: "Lea Kutvonen",
-    number: "040-123456",
-    id: 4}
-]
-
 const formatPerson = (person) => {
     return {
       name: person.name,
